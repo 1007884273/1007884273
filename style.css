@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+
+    background: #e96443;
+    background: -webkit-linear-gradient(to right, #904e95,#e96443);
+    background: linear-gradient(to right, #904e95,#e96443);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+ul{
+    list-style: none;
+    padding: none;
+    margin: none;
+}
+span.resultado{
+    position: relative;
+    width: 100%;
+}
+.resultado-enter{
+    transition: 5s;
+}
+
+.resultado-enter.resultado-enter-active{
+    transform:translateY(0%);
+               
+}
+.resultado-exit{
+    transform: translateY(0);
+    transition: 5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.resultado-exit-active{
+    opacity: 0;
+    transform: trasla(-10%);
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+header{
+    background-color: #26c6DA;
+    padding: 10px;
+    font-weight: bold;
+    color:#ffffff;
+
+
+}
+header h1{
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Slabo 27px',serif ;
+    text-align: center;
+    
+
+}
+.formulario{
+    background-color:#fff ;
+    padding: 3rem;
+}
+.boton{
+    background-color:#00838f;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;
+    box-sizing: border-box;
+    transition: background-color 3s ease;
+    margin-top: 2em;
+
+    
+}
+.boton{
+    background-color: #26c6DA;
+}
+
+
+.error:hover{
+    background-color:#26c6DA ;
+}
+.radio{
+    padding: 30px;
+    margin:5px;
+
+}
+#year{
+    padding: 8px;
+    width: 80%;
+    margin: 10px;
+    margin-left: 40px;
+}
+#marca{
+    padding: 8px;
+    width: 80%;
+    margin: 10px;
+    margin-left: 40px;
+    
+}
+
+.error{
+    background-color: red;
+    color: white;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button-primary{
+    background-color:  #26c6DA;
+    width: 100%;
+    border:none;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+
+}
+.button-primary:hover{
+    background-color: green;
+}
+#msj{
+    margin-top: 30px;
+    padding: 20px;
+    background-color:  #26c6DA;
+    width: 100%;
+    border:none;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+
+}

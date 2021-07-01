@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4./skeleton.min.css">
+
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="onload">
+    <div class="container">
+        <header>
+            <h1>Cotizador de Planes</h1>
+        </header>
+        <div class="formulario">
+            <form action="">
+                <div id="msj-error-cotizador"></div>
+                <div class="campo">
+                    <label>Marca</label>
+                    <select name="marca" id="marca">
+                        <option value="">--Seleccione--</option>
+                        <option value="1">Americano</option>
+                        <option value="2">Europeo</option>
+                        <option value="3">Asiatico</option>
+
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Año  </label>
+                    <select name="year" id="year">
+                        <option value="">--Seleccione--</option>
+                        <option value="1">2021</option>
+                        <option value="2">2020</option>
+                        <option value="3">2019</option>
+                        <option value="4">2018</option>
+                        <option value="5">2017</option>
+                        <option value="6">2016</option>
+                        <option value="7">2015</option>
+
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Planes</label>
+                    <input type="radio" name="Plan" value="Basico" class="radio" id="radiobasico"/>Basico
+                    <input type="radio" name="Plan" value="Completo" class="radio" id="radiocompleto"/>Completo
+
+                </div>
+                <input type="button" onclick="cotizaSeguro()" class="button-primary u-full-width" value="Cotizar"/>      
+            </form>
+            <div clas="mensaje" id="msj">Elige una marca y despues un año</div>
+            <div id="resumen" style="display: none"></div>
+            <div  class="" id="resultado" style="display: none"></div>
+
+        </div>
+
+    </div>
+    <script src="codigo.js"></script>
+    
+</body>
+</html>
