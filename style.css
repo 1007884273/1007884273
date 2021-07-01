@@ -91,9 +91,10 @@ header h1{
 }
 #year{
     padding: 8px;
-    width: 80%;
+    width: 79%;
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 57px;
+    margin-bottom: 20px;
 }
 #marca{
     padding: 8px;
@@ -106,7 +107,7 @@ header h1{
 .error{
     background-color: red;
     color: white;
-    padding: 3rem;
+    padding: 5px;
     width: 100%;
     text-align: center;
     margin-bottom: 2rem;
@@ -119,6 +120,7 @@ header h1{
     padding: 10px;
     color: #fff;
     box-sizing: border-box;
+    margin-top: 20px;
 
 }
 .button-primary:hover{
@@ -135,4 +137,46 @@ header h1{
     box-sizing: border-box;
     text-align: center;
 
+}
+#resumen h1{
+    color:#fff;
+    text-align:center;
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 20px;
+  
+}
+#resumen{
+    color:#fff;
+    text-align:center;
+    font-size: 18px;
+    margin: 5px;
+    margin-top: 1rem;
+    padding: 1rem;
+ 
+  
+}
+#resultado{
+    text-align: center;
+    padding: 1px;
+    border: 1px solid #26c6DA;
+    background-color: rgb(127, 224,237);
+    margin-top: 1rem;
+    position: relative;
+
+}.textoCotizacion{
+    color:#00838F;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+.radio{
+    margin:0 1rem;
+
+}
+
+label{
+    flex: 0 0 100px;
 }

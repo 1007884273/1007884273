@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="onload">
+    
     <div class="container">
         <header>
             <h1>Cotizador de Planes</h1>
@@ -22,42 +23,44 @@
             <form action="">
                 <div id="msj-error-cotizador"></div>
                 <div class="campo">
-                    <label>Marca</label>
+                    <label><b>Marca</b></label>
                     <select name="marca" id="marca">
                         <option value="">--Seleccione--</option>
-                        <option value="1">Americano</option>
-                        <option value="2">Europeo</option>
-                        <option value="3">Asiatico</option>
+                        <option value="americano">Americano</option>
+                        <option value="europeo">Europeo</option>
+                        <option value="asiatico">Asiatico</option>
 
                     </select>
                 </div>
                 <div class="campo">
-                    <label>Año  </label>
+                    <label><b>Año</b></label>
                     <select name="year" id="year">
                         <option value="">--Seleccione--</option>
-                        <option value="1">2021</option>
-                        <option value="2">2020</option>
-                        <option value="3">2019</option>
-                        <option value="4">2018</option>
-                        <option value="5">2017</option>
-                        <option value="6">2016</option>
-                        <option value="7">2015</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
 
                     </select>
                 </div>
                 <div class="campo">
-                    <label>Planes</label>
-                    <input type="radio" name="Plan" value="Basico" class="radio" id="radiobasico"/>Basico
-                    <input type="radio" name="Plan" value="Completo" class="radio" id="radiocompleto"/>Completo
+                    <label><b>Planes</b></label>
+                    <input type="radio" name="plan" value="Basico" class="radio" id="basico"/>Basico
+                    <input type="radio" name="plan" value="Completo" class="radio" id="completo"/>Completo
 
                 </div>
-                <input type="button" onclick="cotizaSeguro()" class="button-primary u-full-width" value="Cotizar"/>      
+                <input type="button" onclick="cotizarSeguro()" class="button-primary u-full-width" value="Cotizar"/>      
             </form>
             <div clas="mensaje" id="msj">Elige una marca y despues un año</div>
             <div id="resumen" style="display: none"></div>
             <div  class="" id="resultado" style="display: none"></div>
 
         </div>
+        
+        
 
     </div>
     <script src="codigo.js"></script>
